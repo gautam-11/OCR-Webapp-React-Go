@@ -1,0 +1,59 @@
+.button {
+  padding: 10px;
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: yellow;
+  background-color: #1b1e1d;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #24c7c7;
+}
+
+.button:active {
+  background-color: #1b1e1d;
+  box-shadow: 0 3px #666;
+  transform: translateY(2px);
+}
+h1 {
+  color: #111;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+input[type="file"] {
+  display: none;
+}
+.choose-btn {
+  border-radius: 4px;
+  margin: 10px;
+  float: center;
+  background-color: #1b1e1d;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-family: arial;
+  font-size: 13px;
+}
+.choose-btn:hover {
+  background: #24c7c7;
+}
+
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 20px;
+  width: 100%;
+  white-space: normal;
+  text-align: justify;
+}

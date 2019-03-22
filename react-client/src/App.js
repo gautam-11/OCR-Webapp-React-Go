@@ -1,5 +1,6 @@
 import React from 'react'
 import { post } from 'axios'
+import './App.css'
 
 class App extends React.Component {
   constructor (props) {
@@ -20,6 +21,7 @@ class App extends React.Component {
   }
   onChange (e) {
     this.setState({ file: e.target.files[0] })
+    document.getElementById('chooseBtn').innerText = e.target.files[0].name
   }
   fileUpload (file) {
     const url = 'http://localhost:8080/upload'
@@ -38,12 +40,26 @@ class App extends React.Component {
     return (
       <center>
         <form onSubmit={this.onFormSubmit}>
-          <h1>OCR Web App</h1>
-          <input type='file' onChange={this.onChange} />
-          <button type='submit'>Upload</button>
-          <br />
-          <br />
-          <textarea id='txt-1' rows='28' cols='100' value={this.state.text}>
+          <h1>Extract Text From Image</h1>
+          <label for='hiddenBtn' class='choose-btn' id='chooseBtn'>
+            Browse
+          </label>
+          <input
+            type='file'
+            name='file'
+            id='hiddenBtn'
+            onChange={this.onChange}
+          />
+          <button className='button' type='submit'>
+            Process
+          </button>
+          <textarea
+            readOnly
+            id='txt-1'
+            rows='20'
+            cols='150'
+            value={this.state.text}
+          >
             {' '}
           </textarea>
         </form>
