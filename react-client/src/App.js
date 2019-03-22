@@ -7,7 +7,8 @@ class App extends React.Component {
     super(props)
     this.state = {
       file: null,
-      text: ''
+      text: '',
+      processText: 'Process'
     }
     this.onFormSubmit = this.onFormSubmit.bind(this)
     this.onChange = this.onChange.bind(this)
@@ -15,8 +16,10 @@ class App extends React.Component {
   }
   onFormSubmit (e) {
     e.preventDefault() // Stop form submit
+    this.setState({ processText: 'Processing' })
     this.fileUpload(this.state.file).then(response => {
       this.setState({ text: response.data })
+      this.setState({ processText: 'Process' })
     })
   }
   onChange (e) {
@@ -41,7 +44,7 @@ class App extends React.Component {
       <center>
         <form onSubmit={this.onFormSubmit}>
           <h1>Extract Text From Image</h1>
-          <label for='hiddenBtn' class='choose-btn' id='chooseBtn'>
+          <label htmlFor='hiddenBtn' className='choose-btn' id='chooseBtn'>
             Browse
           </label>
           <input
@@ -51,7 +54,7 @@ class App extends React.Component {
             onChange={this.onChange}
           />
           <button className='button' type='submit'>
-            Process
+            {this.state.processText}
           </button>
           <textarea
             readOnly

@@ -22,10 +22,9 @@
 }
 h1 {
   color: #111;
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 25px;
+  font-family: "Allan";
+  font-size: 35px;
   font-weight: bold;
-  letter-spacing: -1px;
   line-height: 1;
   text-align: center;
 }
@@ -56,4 +55,9 @@ textarea {
   width: 100%;
   white-space: normal;
   text-align: justify;
+  background: transparent;
+  border: none;
+  font-family: arial;
+  font-size: 18px;
+  font-weight: bold;
 }
