@@ -4,8 +4,8 @@ A web app that extracts the text making use of gosseract package from an uploade
 
 ## Requirements
    ```
-   gosseract - https://github.com/otiai10/gosseract <br />
-   Go - 1.11+ <br/>
+   gosseract - https://github.com/otiai10/gosseract 
+   Go - 1.11+ 
    ```
 ## Instructions to run
    Clone the repo <br/>
