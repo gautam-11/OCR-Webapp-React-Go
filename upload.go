@@ -54,7 +54,6 @@ func uploadFile(w http.ResponseWriter, r *http.Request) {
 	text := extractTextFromImage(fileName)
 	fmt.Println(text)
 	// return that we have successfully uploaded our file!
-
 	w.Write([]byte(text))
 }
 

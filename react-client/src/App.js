@@ -8,6 +8,7 @@ class App extends React.Component {
     this.state = {
       file: null,
       text: '',
+      fileName: 'Browse',
       processText: 'Process'
     }
     this.onFormSubmit = this.onFormSubmit.bind(this)
@@ -20,11 +21,12 @@ class App extends React.Component {
     this.fileUpload(this.state.file).then(response => {
       this.setState({ text: response.data })
       this.setState({ processText: 'Process' })
+      this.setState({ fileName: 'Browse' })
     })
   }
   onChange (e) {
     this.setState({ file: e.target.files[0] })
-    document.getElementById('chooseBtn').innerText = e.target.files[0].name
+    this.setState({ fileName: e.target.files[0].name })
   }
   fileUpload (file) {
     const url = 'http://localhost:8080/upload'
@@ -44,8 +46,8 @@ class App extends React.Component {
       <center>
         <form onSubmit={this.onFormSubmit}>
           <h1>Extract Text From Image</h1>
-          <label htmlFor='hiddenBtn' className='choose-btn' id='chooseBtn'>
-            Browse
+          <label htmlFor='hiddenBtn' className='choose-btn'>
+            {this.state.fileName}
           </label>
           <input
             type='file'
