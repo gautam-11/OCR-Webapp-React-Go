@@ -13,6 +13,7 @@ A web app that extracts the text making use of gosseract package from an uploade
 ## Run React Client
    ```
    cd react-client 
+   sudo yarn install
    sudo yarn start
    ```
 ## Run go server
