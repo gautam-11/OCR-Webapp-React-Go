@@ -4,6 +4,7 @@ A web app that extracts the text making use of gosseract package from an uploade
 
 ## Requirements
    ```
+   Install tesseract-ocr - https://github.com/tesseract-ocr/tesseract/wiki
    gosseract - https://github.com/otiai10/gosseract 
    Go - 1.11+ 
    ```
