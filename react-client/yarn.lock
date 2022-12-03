@@ -2832,9 +2832,9 @@ decamelize@^2.0.0:
     xregexp "4.0.0"
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 deep-equal@^1.0.1:
   version "1.0.1"
@@ -7874,13 +7874,6 @@ react-is@^16.8.1:
   version "16.8.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.1.tgz#a80141e246eb894824fb4f2901c0c50ef31d4cdb"
   integrity sha512-ioMCzVDWvCvKD8eeT+iukyWrBGrA3DiFYkXfBsVYIRdaREZuBjENG+KjrikavCLasozqRWTwFUagU/O4vPpRMA==
-
-react-particles-js@^2.5.1:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/react-particles-js/-/react-particles-js-2.5.1.tgz#337ea9f9220bb33ca4b5ed3efa766efbac74011f"
-  integrity sha512-bNHVtYrNEqOQchcmkOiEhRjD+q8RUHQ8/ZV1KzqKrgsdDOlAJBIAW1E61DSGt33tqQxnN6JRI3E6M5TWEIdfXA==
-  dependencies:
-    lodash "^4.17.11"
 
 react-scripts@2.1.8:
   version "2.1.8"
